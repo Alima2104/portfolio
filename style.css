@@ -237,6 +237,14 @@ h3{
   padding-top: 7.5vh;
 }
 
+.smallpics{
+  display: none;
+}
+
+.smallparagraph{
+  display: none;
+}
+
 .pics {
   display: flex;
 }
@@ -353,7 +361,7 @@ h3{
 }
 
 .pola1, .pola2, .pola3{
-  width: 300px;
+  width: 22vw;
   height: auto;
 }
 
@@ -428,8 +436,29 @@ footer {
   }
 
   .pics {
-    grid-area: pics;
+    display:none;
+  }
+  .smallpics {
+    display: block;
   }
 
-  /* work on parallax mobile version */
+  .pic2_map, .pic7_bark, .pic4_cloud, .pic5_airplane, .pic6_headphones{
+    margin:0;
+    margin-left: 5vw;
+    position: relative;
+  }
+
+  .smallparagraph{
+    display: block;
+    position: relative;
+    margin:0;
+    text-align: center;
+  }
+
+  .smallparagraph p{
+    margin: 0;
+  }
+
+
+
 }
