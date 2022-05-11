@@ -336,7 +336,7 @@ h3{
 
 #about .info p {
   font-size: calc(1vw + 1vh + 1vmin);
-  line-height: 5vh;
+  line-height: 3.5vh;
 }
 
 .me img{
@@ -396,4 +396,40 @@ footer {
   font-size: calc(1vw + 1vh + 1vmin);
   text-align: center;
   background-color: #b6a7cb;
+}
+
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  .chalk {
+    display: none;
+  }
+
+  .name {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  .name p{
+    margin-top: 5vh;
+  }
+
+  .section #projects {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+     "pics description "
+     "pics description "
+     "pics description "
+    grid-gap: 5px;
+  }
+
+  .pics {
+    grid-area: pics;
+  }
+
+  /* work on parallax mobile version */
 }

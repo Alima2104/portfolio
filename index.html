@@ -10,9 +10,13 @@
     <script src="script.js" charset="utf-8" defer> </script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.2/dist/jBox.all.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.2/dist/jBox.all.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>alima💫</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   </head>
   <body>
 
@@ -27,7 +31,9 @@
        <div class="container">
           <div class="section" id="first">
             <div class="chalk" id="chalk">
-              <img src="images/chalk.png" class = "chalkpic" alt="chalk">
+              <span class="tooltip" data-jbox-title=" " data-jbox-content="click on this chalk to draw!">
+                 <img src="images/chalk.png" class = "chalkpic" alt="chalk">
+              </span>
             </div>
             <div class="name">
               <div class="text_shadows"><p>ALIMA <br> ZHAGUFAROVA <br> :):</p> </div>
@@ -44,25 +50,37 @@
                 <img class = "pic1_note" id = "pic1_note" src="images/Note1.png" alt="1">
               </div>
               <div class="rellax" data-rellax-speed="7" data-rellax-percentage="0.5">
-                <img class = "pic2_map" id = "pic2_map" src="images/map1.png" alt="1">
+                <span class="tooltip" data-jbox-title="The Quest For Campus Dirhams" data-jbox-content="It is an interactive website - our version of treasure hunt.<br> Go there, solve riddles, and earn your prize!">
+                   <img class = "pic2_map" id = "pic2_map" src="images/map1.png" alt="1">
+                </span>
               </div>
               <div class="rellax" data-rellax-speed="12" data-rellax-percentage="0.8">
                 <img class = "pic3_p5" id = "pic3_p5" src="images/p5.png" alt="1">
               </div>
               <div class="rellax" data-rellax-speed="1" data-rellax-percentage="0.8">
-                <img class = "pic4_cloud" id = "pic4_cloud" src="images/Cloud.png" alt="1">
+                <span class="tooltip" data-jbox-title="turbulence" data-jbox-content="This interactive website takes the user on a journey on an airplane with a realistic soundscape. <br> We invite you to become one of the ADAA Airways passengers heading to Dubai with an amazing crew. <br> However, not a long time after the departure airplane enters the area of turbulence, and things escalate very quickly.">
+                  <img class = "pic4_cloud" id = "pic4_cloud" src="images/Cloud.png" alt="1">
+                </span>
               </div>
               <div class="rellax" data-rellax-speed="10" data-rellax-percentage="0.8">
-                <img class = "pic5_airplane" id = "pic5_airplane" src="images/Airplane.png" alt="1">
+                <span class="tooltip" data-jbox-title="turbulence" data-jbox-content="This interactive website takes the user on a journey on an airplane with a realistic soundscape. <br> We invite you to become one of the ADAA Airways passengers heading to Dubai with an amazing crew. <br> However, not a long time after the departure airplane enters the area of turbulence, and things escalate very quickly.">
+                    <img class = "pic5_airplane" id = "pic5_airplane" src="images/Airplane.png" alt="1">
+                </span>
               </div>
               <div class="rellax" data-rellax-speed="15" data-rellax-percentage="0.8">
-                <img class = "pic6_headphones" id = "pic6_headphones" src="images/Headphones.png" alt="1">
+                <span class="tooltip" data-jbox-title="ASMR MOVIE: the sounds of NYUAD" data-jbox-content="This website is dedicated to showcase the 30 seconds 'movie' we filmed during the class, and in my case it is an ASMR movie! Enjoy the sounds and the visuals too!">
+                  <img class = "pic6_headphones" id = "pic6_headphones" src="images/Headphones.png" alt="1">
+                </span>
               </div>
               <div class="rellax" data-rellax-speed="3" data-rellax-percentage="0.8">
-                <img class = "pic7_bark" id = "pic7_bark" src="images/Bark.png" alt="1">
+                <span class="tooltip" data-jbox-title="The Goodest Boy" data-jbox-content="It is an interactive website about a shiba called Bark, and the readers get to spend <br> the day with Bark and see what adventures lie in his day-to-day life when his owner leaves. <br> We wanted to create a fun and playful comic that makes the readers feel good, something that can brighten up their day.">
+                   <img class = "pic7_bark" id = "pic7_bark" src="images/Bark.png" alt="1">
+                </span>
               </div>
               <div class="rellax" data-rellax-speed="20" data-rellax-percentage="0.8">
-                <img class = "pic8_ball" id = "pic8_ball" src="images/ball.png" alt="1">
+                <span class="tooltip" data-jbox-title="The Goodest Boy" data-jbox-content="It is an interactive website about a shiba called Bark, and the readers get to spend <br> the day with Bark and see what adventures lie in his day-to-day life when his owner leaves. <br> We wanted to create a fun and playful comic that makes the readers feel good, something that can brighten up their day.">
+                   <img class = "pic8_ball" id = "pic8_ball" src="images/ball.png" alt="1">
+                </span>
               </div>
 
               </div>
@@ -81,8 +99,9 @@
                </p>
             </div>
             <div class="polaroids">
-
-                <img class = "pola1" src="images/polaroid_border.png" alt="1">
+                <img class = "pola1" src="images/pola2.png" alt="1">
+                <img class = "pola2" src="images/pola1.png" alt="1">
+                <img class = "pola3" src="images/pola3.png" alt="1">
             </div>
           </div>
           <div class="section" id="contact">

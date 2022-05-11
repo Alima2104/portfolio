@@ -29,62 +29,11 @@ var currentScrollPos = window.pageYOffset;
 
 // AOS.init();
 
-tippy('.chalkpic', {
-  content: "Press on this chalk to draw!",
-  placement: 'bottom',
-  arrow: false,
-  animation: 'fade',
-  interactive: false,
-  theme: 'myTheme',
-});
-
-tippy('.pic1_note', {
-  content: "Welcome to the projects space! this is the note that will help you to understand what is going on",
-  placement: 'bottom-start',
-  arrow: false,
-  animation: 'fade',
-  interactive: true,
-  theme: 'myTheme',
-});
-
-tippy('.pic4_cloud, .pic5_airplane', {
-  content: "The audio project that ...",
-  placement: 'left',
-  arrow: false,
-  animation: 'fade',
-  interactive: true,
-  theme: 'myTheme',
-});
-
-tippy('.pic7_bark, .pic8_ball', {
-  content: "The comic project that tells a story of the goodest boy Bark, his daily life, and musterious intruder! Don't forget to interact with Bark to make him happy <3",
-  placement: 'top',
-  appendTo: '.pics', 
-  arrow: false,
-  animation: 'fade',
-  interactive: true,
-  theme: 'myTheme',
-});
-
-tippy('.pic6_headphones', {
-  content: "This website is dedicated to showcase the 30 seconds 'movie' we filmed during the class, and in my case it is an ASMR movie! Enjoy the sounds and the visuals too!",
-  placement: 'right',
-  arrow: false,
-  animation: 'fade',
-  interactive: true,
-  theme: 'myTheme',
-});
-
-// const template = document.getElementById('template');
-
-tippy('.pic2_map', {
-  content:  "It is an interactive website - our version of treasure hunt. Go there, solve riddles, and earn your prize!",
-  // allowHTML: true,
-  placement: 'top-start',
-  arrow: false,
-  animation: 'fade',
-  interactive: true,
-  theme: 'myTheme',
+new jBox('Mouse', {
+  attach: '.tooltip',
+  getTitle: 'data-jbox-title',
+  getContent: 'data-jbox-content',
+  animation: 'zoomIn',
 });
 
 const asmrProject = document.getElementById('pic6_headphones');
