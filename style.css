@@ -5,12 +5,14 @@ body {
   display: block;
 }
 
+/* scroll snap so every section is the full page and scrolls to the next */
 html {
   font-family: 'Ubuntu', sans-serif;
   scroll-snap-type: y mandatory;
   font-size: 16px;
 }
 
+/* navigation bar */
 header #navbar{
   background-color:#2d6c51;
   text-align: left;
@@ -22,6 +24,7 @@ header #navbar{
   z-index: 10;
 }
 
+/* i tried to make all fonts with the calc function so they are resizable */
 header #navbar a{
   float: right;
   text-align: center;
@@ -33,18 +36,20 @@ header #navbar a{
 }
 
 main{
-  grid-area: main;
   background-color:#2d6c51;
 }
 
+/* scrolling begins! */
 .section {
   scroll-snap-align: start;
 }
 
+/* important for chalk drawing to work */
 #first {
   z-index: 0;
 }
 
+/* making section full page */
 .section  {
   width: 100vw;
   height: 100vh;
@@ -64,10 +69,6 @@ main{
   margin-left: -15vh;
 }
 
-.chalk:hover {
-  animation: move 1s;
-}
-
 .section .name {
   z-index: 2;
   padding-top: 10%;
@@ -85,6 +86,7 @@ main{
   z-index: 2;
 }
 
+/* defining colors for the further use */
 :root {
   --color-primary: #f3ebdd;
   --color-secondary: #b3accb;
@@ -105,6 +107,7 @@ main{
   z-index: 100;
 }
 
+/* shadows effect at the beginning */
 .text_shadows {
   text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
     9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
@@ -121,6 +124,7 @@ main{
   letter-spacing: 0.4rem;
 }
 
+/* css animation */
 @keyframes shadows {
   0% {
     text-shadow: none;
@@ -167,6 +171,7 @@ main{
   }
 }
 
+/* button that shows that user needs to go down */
 .scroll-down {
   opacity: 1;
   -webkit-transition: all .5s ease-in 3s;
@@ -240,6 +245,7 @@ h3{
   display: flex;
 }
 
+/* adjusting the parameters of pictures in collage. i used only vw and vh so they are resizable */
 .pic1_note{
   position: relative;
   width: 23vw;
@@ -382,7 +388,7 @@ footer {
   background-color: #b6a7cb;
 }
 
-
+/* for the mobile screen - responsive!! */
 @media screen and (max-width: 768px) {
   html {
     font-size: 12px;

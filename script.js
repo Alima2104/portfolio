@@ -1,3 +1,4 @@
+//animation for the button
 (function() {
    ('.scroll-down').click (function() {
      ('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
@@ -5,6 +6,7 @@
    });
  });
 
+//parallax effect for pictures of the project section
  var rellax = new Rellax('.rellax', {
     speed: -2,
     center: true,
@@ -14,6 +16,7 @@
     horizontal: false
   });
 
+//making the header disappear when scrolling down and appear again when scrolling up
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
@@ -25,7 +28,7 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
-
+//tooltips!
 new jBox('Mouse', {
   attach: '.tooltip',
   getTitle: 'data-jbox-title',
@@ -33,6 +36,7 @@ new jBox('Mouse', {
   animation: 'zoomIn',
 });
 
+//making every image clickable on the projects page
 const asmrProject = document.getElementById('pic6_headphones');
 asmrProject.addEventListener("click", function(){
    window.open('https://alima2104.github.io/30MFF/');
@@ -70,6 +74,8 @@ chalk_click.addEventListener("click", function(){
 	check=true;
 });
 
+
+//drawing with chalk!
 var canvas;
 function setup() {
   canvas=createCanvas(windowWidth, windowHeight);

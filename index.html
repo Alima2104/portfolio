@@ -2,14 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!--libraries i used -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="p5.min.js" charset="utf-8" defer> </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script src="script.js" charset="utf-8" defer> </script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.2/dist/jBox.all.min.js"></script>
 <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.2/dist/jBox.all.min.css" rel="stylesheet">
@@ -28,8 +27,10 @@
         </header>
         <main>
        <div class="container">
+         <!-- I divided my website into sections, and it is one page website -->
           <div class="section" id="first">
             <div class="chalk" id="chalk">
+              <!-- adding tooltip so user can understand that they are supposed to draw with the chalk -->
               <span class="tooltip" data-jbox-title=" " data-jbox-content="click on this chalk to draw!">
                  <img src="images/chalk.png" class = "chalkpic" alt="chalk">
               </span>
@@ -41,9 +42,11 @@
           </div>
           <div class="section" id="projects">
             <h3>PROJECTS</h3>
+            <!-- divs that are not displayed unless it is the mobile device version -->
             <div class="smallparagraph">
               <p>Please click on any picture to visit different websites me and my teams created throughout this semester. Enjoy! </p>
             </div>
+            <!-- divs that are not displayed unless it is the mobile device version -->
             <div class="smallpics">
                <img class = "pic2_map" id = "pic2_map" src="images/map1.png" alt="1">
                <img class = "pic4_cloud" id = "pic4_cloud" src="images/Cloud.png" alt="1">
@@ -51,6 +54,7 @@
                <img class = "pic6_headphones" id = "pic6_headphones" src="images/Headphones.png" alt="1">
                <img class = "pic7_bark" id = "pic7_bark" src="images/Bark.png" alt="1">
             </div>
+            <!-- my collage consists of many individual spans, images, that are appearing with the parallaz effect -->
             <div class="pics">
               <div class="rellax" data-rellax-speed="2.1" data-rellax-percentage="0.5">
                 <img class = "pic1_note" id = "pic1_note" src="images/Note1.png" alt="1">
@@ -88,11 +92,10 @@
                    <img class = "pic8_ball" id = "pic8_ball" src="images/ball.png" alt="1">
                 </span>
               </div>
-
               </div>
-
             </div>
           </div>
+          <!-- section about me -->
           <div class="section" id = "about">
             <h3>HI!</h3>
             <div class="me" id="me">
