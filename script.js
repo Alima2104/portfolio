@@ -14,8 +14,6 @@
     horizontal: false
   });
 
-
-
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
@@ -27,7 +25,6 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
-// AOS.init();
 
 new jBox('Mouse', {
   attach: '.tooltip',
@@ -93,14 +90,12 @@ function touchMoved() {
 }
 
 function sprayPaint() {
-	// set the color and brush style
   stroke(255, 255, 255, 255)
   strokeWeight(1)
 
 	// find the speed of the mouse movement
   const speed = abs(mouseX - pmouseX) + abs(mouseY - pmouseY)
 
-	// set minimum radius and spray density of spraypaint brush
 	const minRadius = 10;
 	const sprayDensity = 50
 

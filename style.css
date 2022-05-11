@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
 
-
-
 body {
   margin: 0;
   display: block;
@@ -12,7 +10,6 @@ html {
   scroll-snap-type: y mandatory;
   font-size: 16px;
 }
-
 
 header #navbar{
   background-color:#2d6c51;
@@ -33,7 +30,6 @@ header #navbar a{
   font-weight: 500;
   color: #f3ebdd;
   padding: 15px;
-
 }
 
 main{
@@ -124,11 +120,6 @@ main{
   animation: shadows 2.2s ease-in infinite;
   letter-spacing: 0.4rem;
 }
-
-@keyframes move {
-
-}
-
 
 @keyframes shadows {
   0% {
@@ -251,10 +242,8 @@ h3{
 
 .pic1_note{
   position: relative;
-  /* width: 18.75em; */
   width: 23vw;
   height: auto;
-  /* height: 62.5vh; */
   margin-left: 10vw;
 }
 
@@ -262,7 +251,6 @@ h3{
   position: absolute;
   width: 50vw;
   height: auto;
-  /* height: 500px; */
   margin-left: 7.8vw;
   z-index: 100;
 }
@@ -271,9 +259,7 @@ h3{
   position: absolute;
   width: 23vw;
   height: auto;
-  /* height: 300px; */
   margin-left: 39vw;
-  /* margin-left: 70%; */
   z-index: 100;
 }
 
@@ -281,10 +267,8 @@ h3{
   position: absolute;
   width: 31vw;
   height: auto;
-  /* height: 250px; */
   margin-left: 23vw;
   margin-top: 25vh;
-  /* margin-left: 70%; */
   z-index: 100;
 }
 
@@ -292,10 +276,8 @@ h3{
   position: absolute;
   width: 23.4vw;
   height: auto;
-  /* height: 150px; */
   margin-left: 23.4vw;
   margin-top: 37.4vh;
-  /* margin-left: 70%; */
   z-index: 100;
 }
 
@@ -303,10 +285,8 @@ h3{
   position: absolute;
   width: 23.4vw;
   height: auto;
-  /* height: 300px; */
   margin-left: -7vw;
   margin-top: -5vh;
-  /* margin-left: 70%; */
   z-index: 100;
 }
 
@@ -314,10 +294,8 @@ h3{
   position: absolute;
   width: 23.4vw;
   height: auto;
-  /* height: 300px; */
   margin-left: -5.5vw;
   margin-top: 25vh;
-  /* margin-left: 70%; */
   z-index: 100;
 }
 
@@ -327,7 +305,6 @@ h3{
   height: auto;
   margin-left: -12.5vw;
   margin-top: 50vh;
-  /* margin-left: 70%; */
   z-index: 100;
 }
 
@@ -399,7 +376,6 @@ h3{
 
 footer {
   display: block;
-  /* position: absolute; */
   object-position: bottom; */
   font-size: calc(1vw + 1vh + 1vmin);
   text-align: center;
@@ -458,7 +434,5 @@ footer {
   .smallparagraph p{
     margin: 0;
   }
-
-
 
 }
