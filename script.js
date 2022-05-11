@@ -29,9 +29,9 @@ var currentScrollPos = window.pageYOffset;
 
 // AOS.init();
 
-tippy('.chalk', {
+tippy('.chalkpic', {
   content: "Press on this chalk to draw!",
-  placement: 'top',
+  placement: 'bottom',
   arrow: false,
   animation: 'fade',
   interactive: false,
@@ -57,8 +57,9 @@ tippy('.pic4_cloud, .pic5_airplane', {
 });
 
 tippy('.pic7_bark, .pic8_ball', {
-  content: "The comix project that ...",
+  content: "The comic project that tells a story of the goodest boy Bark, his daily life, and musterious intruder! Don't forget to interact with Bark to make him happy <3",
   placement: 'top',
+  appendTo: '.pics', 
   arrow: false,
   animation: 'fade',
   interactive: true,
@@ -66,7 +67,7 @@ tippy('.pic7_bark, .pic8_ball', {
 });
 
 tippy('.pic6_headphones', {
-  content: "The first project that ...",
+  content: "This website is dedicated to showcase the 30 seconds 'movie' we filmed during the class, and in my case it is an ASMR movie! Enjoy the sounds and the visuals too!",
   placement: 'right',
   arrow: false,
   animation: 'fade',
@@ -77,16 +78,44 @@ tippy('.pic6_headphones', {
 // const template = document.getElementById('template');
 
 tippy('.pic2_map', {
-  content:  "It is an interactive website - our version of treasure hunt. Go there and do exciti",
+  content:  "It is an interactive website - our version of treasure hunt. Go there, solve riddles, and earn your prize!",
   // allowHTML: true,
-  placement: 'bottom-start',
+  placement: 'top-start',
   arrow: false,
   animation: 'fade',
   interactive: true,
   theme: 'myTheme',
 });
 
+const asmrProject = document.getElementById('pic6_headphones');
+asmrProject.addEventListener("click", function(){
+   window.open('https://alima2104.github.io/30MFF/');
+});
 
+const comicProject = document.getElementById('pic7_bark');
+comicProject.addEventListener("click", function(){
+   window.open('https://fatimaalmaazmi.github.io/comicWebsite/');
+});
+
+const comicProject2 = document.getElementById('pic8_ball');
+comicProject2.addEventListener("click", function(){
+   window.open('https://fatimaalmaazmi.github.io/comicWebsite/');
+});
+
+const audioProject = document.getElementById('pic4_cloud');
+audioProject.addEventListener("click", function(){
+   window.open('https://dktpt44.github.io/ComLab-AudioProject/');
+});
+
+const audioProject2 = document.getElementById('pic5_airplane');
+audioProject2.addEventListener("click", function(){
+   window.open('https://dktpt44.github.io/ComLab-AudioProject/');
+});
+
+const videoProject = document.getElementById('pic2_map');
+videoProject.addEventListener("click", function(){
+   window.open('https://ava-creates.github.io/treasure_hunt/');
+});
 
 const chalk_click = document.getElementById('chalk');
 var check=false;

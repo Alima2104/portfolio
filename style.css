@@ -10,7 +10,9 @@ body {
 html {
   font-family: 'Ubuntu', sans-serif;
   scroll-snap-type: y mandatory;
+  font-size: 16px;
 }
+
 
 header #navbar{
   background-color:#2d6c51;
@@ -19,7 +21,7 @@ header #navbar{
   position: fixed;
   width: 100%;
   display: block;
- transition: top 0.3s;
+  transition: top 0.3s;
   z-index: 10;
 }
 
@@ -27,7 +29,7 @@ header #navbar a{
   float: right;
   text-align: center;
   text-decoration: none;
-  font-size: 30px;
+  font-size: calc(1vw + 1vh + 1vmin);
   font-weight: 500;
   color: #f3ebdd;
   padding: 15px;
@@ -56,13 +58,14 @@ main{
 
 .section p{
   z-index: 100;
-  margin-left: 30%;
-
+  margin-left: 30vw;
 }
 
 .chalk{
+  width: 100%;
+  height: auto;
   position: absolute;
-  margin-left: -10%;
+  margin-left: -15vh;
 }
 
 .chalk:hover {
@@ -78,14 +81,6 @@ main{
   color: #e66438;
   animation: shadows 1s;
 }
-
-.section .tape img{
-  position: absolute;
-  margin-left: 70%;
-  max-width: 20%;
-  height: auto;
-}
-
 
 *,
 *::before,
@@ -237,9 +232,9 @@ main{
 }
 
 h3{
-  text-align: left;
-  font-size: 50px;
-  padding-top: 60px;
+  text-align: center;
+  font-size: calc(2vw + 2vh + 1vmin);
+  padding-top: 7.5vh;
 }
 
 .pics {
@@ -248,100 +243,124 @@ h3{
 
 .pic1_note{
   position: relative;
-  width: 18.75em;
-  height: 500px;
-  margin-left: 200px;
+  /* width: 18.75em; */
+  width: 23vw;
+  height: auto;
+  /* height: 62.5vh; */
+  margin-left: 10vw;
 }
 
 .pic2_map{
   position: absolute;
-  width: 700px;
-  height: 500px;
-  margin-left: 100px;
+  width: 50vw;
+  height: auto;
+  /* height: 500px; */
+  margin-left: 7.8vw;
   z-index: 100;
 }
 
 .pic3_p5{
   position: absolute;
-  width: 300px;
-  height: 300px;
-  margin-left: 500px;
+  width: 23vw;
+  height: auto;
+  /* height: 300px; */
+  margin-left: 39vw;
   /* margin-left: 70%; */
   z-index: 100;
 }
 
 .pic4_cloud{
   position: absolute;
-  width: 400px;
-  height: 250px;
-  margin-left: 300px;
-  margin-top: 200px;
+  width: 31vw;
+  height: auto;
+  /* height: 250px; */
+  margin-left: 23vw;
+  margin-top: 25vh;
   /* margin-left: 70%; */
   z-index: 100;
 }
 
 .pic5_airplane{
   position: absolute;
-  width: 300px;
-  height: 150px;
-  margin-left: 300px;
-  margin-top: 300px;
+  width: 23.4vw;
+  height: auto;
+  /* height: 150px; */
+  margin-left: 23.4vw;
+  margin-top: 37.4vh;
   /* margin-left: 70%; */
   z-index: 100;
 }
 
 .pic6_headphones{
   position: absolute;
-  width: 300px;
-  height: 300px;
-  margin-left: -90px;
-  margin-top: -40px;
+  width: 23.4vw;
+  height: auto;
+  /* height: 300px; */
+  margin-left: -7vw;
+  margin-top: -5vh;
   /* margin-left: 70%; */
   z-index: 100;
 }
 
 .pic7_bark{
   position: absolute;
-  width: 300px;
-  height: 300px;
-  margin-left: -70px;
-  margin-top: 150px;
+  width: 23.4vw;
+  height: auto;
+  /* height: 300px; */
+  margin-left: -5.5vw;
+  margin-top: 25vh;
   /* margin-left: 70%; */
   z-index: 100;
 }
 
 .pic8_ball{
   position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: -100px;
-  margin-top: 400px;
+  width: 7vw;
+  height: auto;
+  margin-left: -12.5vw;
+  margin-top: 50vh;
   /* margin-left: 70%; */
   z-index: 100;
 }
 
-/* #template p{
-  word-wrap: break-word;
-}
- */
-
 .section h1{
   text-align: center;
-  font-size: 70px;
+  font-size: calc(3vw + 3vh + 2vmin);
   padding-top: 10%;
 }
 
+#about .info {
+  margin: 5vw;
+
+}
+
+#about .info p {
+  font-size: calc(1vw + 1vh + 1vmin);
+  line-height: 5vh;
+}
+
 .me img{
-  width: 350px;
-  height: 600px;
+  width: 25vw;
+  height: auto;
   position: absolute;
   margin-left: 3%;
+}
+
+.polaroids {
+  display: flex;
+  position: absolute;
+  margin-left: 35vw;
+}
+
+.pola1, .pola2, .pola3{
+  width: 300px;
+  height: auto;
 }
 
 
 #contact h4{
   text-align: center;
-  font-size: 50px;
+  font-size:  calc(2vw + 2vh + 1vmin);
   margin: 0;
 }
 
@@ -365,12 +384,16 @@ h3{
   color: #e66438;
 }
 
+.section #contact {
+   height: calc(100vh - 64px);
+   overflow-y: scroll;
+}
 
 footer {
   display: block;
-  position: fixed;
-  font-size: calc(4vw + 4vh + 4vmin);
+  /* position: absolute; */
+  object-position: bottom; */
+  font-size: calc(1vw + 1vh + 1vmin);
   text-align: center;
   background-color: #b6a7cb;
-  padding: 5px;
 }
